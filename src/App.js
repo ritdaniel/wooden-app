@@ -1,14 +1,15 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import logo from './logo.svg';
 import fondo from './fondo.jpg';
-import { NavBar } from './components/navbar';
+import { NavBar, ItemListContainer,ItemDetailContainer } from './components';
 import './App.css';
 import './Style.css';
-import './components/promesa';
+//import './components/Promesa';
 function App() {
     return ( <div className = "App" style={{backgroundImage:`url(${fondo})`, backgroundSize: "cover",}}>
         < header >
         <NavBar/>
+        <ItemDetailContainer />
         <img src = { logo }
         className = "App-logo"
         alt = "logo"/>
